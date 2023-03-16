@@ -20,3 +20,26 @@ def encrypt(text, key):
 
 # Check the encryption function with the shift equals to 10
 # print(encrypt("datacamp", 10))                              ( To check )
+
+
+'''
+You are given the variable text storing the following string 'StRing ObJeCts haVe mANy inTEResting pROPerTies'.
+Your task is to modify this string in such a way that would result in 'string OBJECTS have MANY interesting PROPERTIES' (every other word in text is lowercased and uppercased, otherwise). 
+You will obtain this result in three steps.
+'''
+
+# Create a word list from the string stored in 'text'
+word_list = text.split()
+
+# Make every other word lowercased; otherwise - uppercased
+for i in range(len(word_list)):
+    if i% 2 != 0:
+        word_list[i] = word_list[i].upper()
+    else:
+        word_list[i] = word_list[i].lower()
+
+print(word_list)
+
+# Join the words back and form a new string
+new_text = ' '.join(word_list)
+print(new_text)
