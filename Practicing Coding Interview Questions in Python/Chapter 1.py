@@ -5,13 +5,15 @@ For example, given the English alphabet, a shift of 1 for 'xyz' would imply 'yza
 Thus, encryption/decryption requires two arguments: text and an integer key denoting the shift (key = 1 for the example above).
 Your task is to create an encryption function given the English alphabet stored in the alphabet string.'''
 
+
 def encrypt(text, key):
   
     encrypted_text = ''
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
     # Fill in the blanks to create an encrypted text
     for char in text.lower():
-        idx = (alphabet.index(char) + key) % len(alphabet)
+        idx = (alphabet.index(char) + key) % len(alphabet)           # For decrypting, change + to -
         encrypted_text = encrypted_text + alphabet[idx]
 
     return encrypted_text
