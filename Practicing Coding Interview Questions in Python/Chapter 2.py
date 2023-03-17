@@ -43,5 +43,17 @@ a and b. For example, the numbers 7 and 9 are coprime because their GCD is 1.
 
 Given two lists list1 and list2, your task is to create a new list coprimes that contains all the coprime pairs from list1 and list2.
 '''
-
+def gcd(a, b):
+    # Define the while loop as described
+    while b != 0:
+        temp_a = a
+        a = b
+        b = temp_a % b    
+    # Complete the return statement
+    return a
+    
+# Create a list of tuples defining pairs of coprime numbers
+coprimes = [(i, j) for i in list1 
+                   for j in list2 if gcd(i, j) == 1]
+print(coprimes)
 
