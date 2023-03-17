@@ -37,3 +37,11 @@ def is_prime(n):
 primes = [num for num in cands if is_prime(num) is True]
 print("primes = " + str(primes))
 
+'''
+Two numbers a and b are coprime if their Greatest Common Divisor (GCD) is 1. GCD is the largest positive number that divides two given numbers 
+a and b. For example, the numbers 7 and 9 are coprime because their GCD is 1.
+
+Given two lists list1 and list2, your task is to create a new list coprimes that contains all the coprime pairs from list1 and list2.
+'''
+
+
