@@ -5,7 +5,7 @@ Rather than simply accessing certain slices, you will define a more general solu
 
 The module numpy is already imported as np.
 
-You will need the reversed() function, which reverses an Iterable.    (Image has been attached for the reference)
+You will need the reversed() function, which reverses an Iterable.    (Image: Screenshot 2023-03-18 at 4.34.25 PM.png)
 '''
 
 import numpy as np
